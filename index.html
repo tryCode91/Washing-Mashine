@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 23px;
+            font-weight: 500;
+        }
+        .table-container {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        thead {
+            background-color: #6b7280;
+            color: #e5e7eb;
+        }
+
+        th, td {
+            padding: 16px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tbody {
+            background-color: #fff;
+            color: #6b7280;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 35px;
+        }
+        h2{
+            font-size:29px;
+        }
+
+    </style>
+    <title>Styled Table</title>
+</head>
+<body>
+<h1>TORKTUMLARE</h1>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Energiklass</th>
+                <th>Märke</th>
+                <th>Recensioner</th>
+                <th>Information</th>
+                <th>Pris</th>
+                <th>Länk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A++</td>
+                <td>Electrolux</td>
+                <td>Okej recensioner om torktomlare</td>
+                <td>Från electrolux egen hemsida, ingår 5 års garanti och inbärning</td>
+                <td>7 839 SEK</td>
+                <td><a href="https://www.electrolux.se/laundry/laundry/dryers/heat-pump-dryer/ew2h328r4/?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricerunner">Länk</a></td>
+            </tr>
+            <tr>
+                <td>A+++</td>
+                <td>Siemens</td>
+                <td>Bra recensioner om produkten</td>
+                <td></td>
+                <td>9 990 SEK</td>
+                <td><a href="https://www.vitvaruexperten.com/torktumlare/varmepumpstumlare/siemens-varmepumpstumlare-wq33g2cbdn-iq500-energiklass-a?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricerunner">Länk</a></td>
+            </tr>
+            <tr>
+                <td>A++</td>
+                <td>Electrolux</td>
+                <td>Få men endast positiva recensioner</td>
+                <td>Från electrolux egen hemsida med 5 års garanti</td>
+                <td>11 095 SEK</td>
+                <td><a href="https://www.electrolux.se/laundry/laundry/dryers/heat-pump-dryer/ew8h669n3/?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricerunner">Länk</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<h1>TVÄTTMASKINER</h1>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Energiklass</th>
+                <th>Märke</th>
+                <th>Recensioner</th>
+                <th>Information</th>
+                <th>Pris</th>
+                <th>Återförsäljare</th>
+                <th>Länk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B</td>
+                <td>LG</td>
+                <td>Mycket bra recensioner</td>
+                <td></td>
+                <td>8 795 SEK</td>
+                <td>Elgiganten</td>
+                <td><a href="https://www.elgiganten.se/product/vitvaror/tvatt-tork/tvattmaskin/lg-tvattmaskin-fv50vns3e-9kg/155023?utm_source=pricerunner&utm_medium=pricecomparison&utm_campaign=pricecompcpc2425_MTUTIC_7022598611489539">Länk</a></td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Bosch</td>
+                <td>Mycket bra recensioner också</td>
+                <td></td>
+                <td>7 490 SEK</td>
+                <td>NetOnNet</td>
+                <td><a href="https://www.netonnet.se/art/vitvaror/tvattmaskin/frontmatad-tvattmaskin/bosch-wau28rhisn/1027735.17968/?utm_source=pricerunner.se&utm_medium=cpc&utm_campaign=prospecting_conversion_se_1027735">Länk</a></td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Electrolux</td>
+                <td>Många bra recensioner</td>
+                <td></td>
+                <td>7 990 SEK</td>
+                <td>NetOnNet</td>
+                <td><a href="https://www.netonnet.se/art/vitvaror/tvattmaskin/frontmatad-tvattmaskin/electrolux-ew6f6248g7/1028545.17968/?utm_source=pricerunner.se&utm_medium=cpc&utm_campaign=prospecting_conversion_se_1028545">Länk</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+<div>
+    <h2>Medelpris tvättmaskiner: <b id="medelTvatt"></b><small> SEK</small></h2>
+</div>
+<hr>
+<div>
+    <h2>Medelpris torktumlare: <b id="medelTork"></b> <small> SEK</small></h2>
+</div>
+<hr>
+<div>
+    <h2>Totalpris från <b id="totalMin"></b> - <b id="totalMax"></b><small> SEK</small></h2>
+</div>
+<hr>
+
+<script>
+
+//calculate median price and average price and max and min total sum
+var medelprisTvattmaskiner = Math.round((8795 + 7490 + 7990) / 3);
+var medelprisTorktumlare = Math.round((7839 + 9900 + 11095) / 3);
+var totalprisMin = 7839 + 7490; // minsta värdet på torktomulare + tvättmaskin
+var totalprisMax = 11095 + 8795; // högsta värdet på torktomulare + tvättmaskin
+
+// set the values
+document.getElementById("medelTvatt").innerText = `${medelprisTvattmaskiner}`;
+document.getElementById("medelTork").innerText = `${medelprisTorktumlare}`;
+document.getElementById("totalMin").innerText = `${totalprisMin}`;
+document.getElementById("totalMax").innerText = `${totalprisMax}`;
+</script>
+
+</body>
+</html>
