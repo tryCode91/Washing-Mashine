@@ -52,6 +52,7 @@
         h1 {
             font-weight: bold;
             font-size: 32px;
+            text-align: center;
         }
 
         h2 {
@@ -65,7 +66,7 @@
             padding: 10px 0;
             font-size: 14px;
             color: #555;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 99%;
         }
@@ -92,6 +93,7 @@
     <title>Bästa Tvättmaskiner och torktumlare</title>
 </head>
 <body>
+
 <h1>TORKTUMLARE</h1>
 <div class="table-container">
     <table>
@@ -152,7 +154,7 @@
     </table>
 </div>
 
-<h1>TVÄTTMASKINER</h1>
+<h1 style="margin-top: 90px;">TVÄTTMASKINER</h1>
 <div class="table-container">
     <table>
         <thead>
@@ -212,7 +214,7 @@
     </table>
 </div>
 
-<div class="table-container"></div>
+<div class="table-container" style="margin-top: 50px;"></div>
     <table>
         <thead>
             <tr>
@@ -235,7 +237,8 @@
     <h2>Information</h2>
     Energiklass A+++ är den mest energieffektiva torktumlaren.<br/>
     Energiklass A för tvättmaskiner är den mest energieffektiva.<br/>
-    När man köper från Electrolux ingår i de flesta maskiner 5-års garanti och det går även att beställa installation och inbärning.
+    När man köper från Electrolux ingår i de flesta maskiner 5-års garanti och det går även att beställa installation av maskiner och inbärning in till hemmet.<br/>
+    Tabellerna är rangordnade efter vad jag har bestämt är den bästa till mindre bra 4.
 </div>
 
 <footer style="margin-top: 20px;">
@@ -244,10 +247,10 @@
 <script>
 
 // Calculate median price and average price and max and min total sum
-var medelprisTvattmaskiner = Math.round((8795 + 7490 + 7990) / 3);
-var medelprisTorktumlare = Math.round((7839 + 9900 + 11095) / 3);
+var medelprisTvattmaskiner = Math.round((8795 + 7490 + 7990 + 9097) / 4);
+var medelprisTorktumlare = Math.round((7839 + 9900 + 11095 + 12995) / 4);
 var totalprisMin = 7839 + 7490; // minsta värdet på torktomulare + tvättmaskin
-var totalprisMax = 11095 + 8795; // högsta värdet på torktomulare + tvättmaskin
+var totalprisMax = 12995 + 9097; // högsta värdet på torktomulare + tvättmaskin
 
 // Set the values
 document.getElementById("medelTvatt").innerText = `${medelprisTvattmaskiner}`;
